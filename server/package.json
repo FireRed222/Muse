@@ -1,15 +1,15 @@
 {
-    "name": "json-server",
-    "version": "1.0.0",
-    "scripts": {
-        "start": "json-server --watch db.json --port 10000"
-    },
-    "dependencies": {
-        "json-server": "^0.17.4"
-    },
-    "main": "index.js",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": ""
+  "name": "json-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
