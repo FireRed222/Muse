@@ -1,0 +1,348 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 2s ease, background-color 2s ease;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.beat-flash {
+  box-shadow: 0 0 50px 20px white inset;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.bg-gradient-layer,
+#starry-bg,
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.bg-gradient-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, #ff00cc, #3333ff, #00ffee);
+  background-size: 600% 600%;
+  transition: background 1s ease-in-out;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 340px;
+  height: 420px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid rgb(0, 0, 0);
+
+  &:hover {
+    .text {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      opacity: 1;
+      pointer-events: auto;
+
+      @media (max-width: 350px) {
+        width: 270px;
+      }
+    }
+  }
+}
+
+.swiper-slide-active {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: 1s ease-in-out;
+}
+
+.mainttl {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  margin: 40px 0 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 10;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.albumCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+
+  .number {
+    position: absolute;
+    left: 6px;
+    top: 1px;
+    opacity: 0.2;
+  }
+
+  .moreThanNine {
+    position: absolute;
+    left: -2px;
+    top: 1px;
+    opacity: 0.2;
+  }
+  .smallText {
+    font-size: 24px;
+  }
+
+  .normalText {
+    font-size: 33px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+
+  img {
+    border-radius: 10px;
+    width: 220px;
+    height: 220px;
+  }
+
+  p {
+    font-weight: 400;
+    color: #d6d6d6;
+  }
+
+  .controls {
+    max-width: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.509);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 286px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+
+    .controlsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+      text-align: center;
+
+      @media (max-width: 350px) {
+        gap: 8px;
+      }
+    }
+    .tinySongTitle {
+      font-size: 14px;
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .normalSongTitle {
+      font-size: 32px;
+    }
+    .smallSongTitle {
+      font-size: 28px;
+    }
+    .progressBar {
+      background-color: #00ffee;
+      height: 10px;
+      width: 90%;
+      border-radius: 20px;
+
+      .progressBarToo {
+        background-color: red;
+        height: 10px;
+        border-radius: 20px;
+        width: 10%;
+      }
+    }
+
+    .playerBtns {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+      padding: 4px;
+
+      .playBtn {
+        display: none;
+      }
+    }
+    .playerBtns svg {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .playerBtns svg:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: #1c1a27;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: #3d1635;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: #801357;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: #b8235a;
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: #801357;
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: #3d1635;
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: #1c1a27;
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: #3d1635;
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: #801357;
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: #b8235a;
+}
+
+@media (max-width: 640px) {
+  .swiper {
+    width: 320px;
+  }
+  .albumCard {
+    .moreThanNine {
+      font-size: 37px;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .swiper {
+    width: 300px;
+    height: 400px;
+  }
+  .albumCard {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    .normalText {
+      font-size: 30px;
+    }
+    .smallText {
+      text-align: center;
+    }
+    .number {
+      left: 1px;
+      font-size: 38px;
+    }
+    .moreThanNine {
+      font-size: 37px;
+    }
+  }
+}
+
+@media (max-width: 310px) {
+  .swiper {
+    width: 280px;
+  }
+  .albumCard {
+    .moreThanNine {
+      font-size: 32px;
+    }
+  }
+}

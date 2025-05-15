@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  background-color: #0a0a0a;
+  z-index: 9999;
+  animation: fadeOut 0.8s ease-out 1.2s forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+button {
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+}
+
+h1 {
+  margin: 10px;
+}

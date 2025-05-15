@@ -1,0 +1,30 @@
+.wavyText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+  }
+  
+  .char {
+    display: inline-block;
+    white-space: pre;
+    color: white;
+    text-shadow: 0 0 6px var(--glow-color), 0 0 12px var(--glow-color);
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes glowPulse {
+    0%, 100% {
+      text-shadow: 0 0 6px var(--glow-color), 0 0 12px var(--glow-color);
+    }
+    50% {
+      text-shadow: 0 0 12px var(--glow-color), 0 0 24px var(--glow-color);
+    }
+  }
+  
