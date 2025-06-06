@@ -8,7 +8,7 @@ const GetHome = () => {
 
    const { isLoading, error, data } = useQuery({
      queryKey: ["home"],
-     queryFn: () => fetchData("http://localhost:3000/home"),
+     queryFn: () => fetchData("https://muse-backend-hsdb.onrender.com"),
      staleTime: 60 * 1000,
    })   
    if (isLoading) return <h1>"Loading..."</h1>;
