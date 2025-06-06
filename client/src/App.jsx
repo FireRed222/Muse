@@ -14,7 +14,6 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/posts' element={<GetPosts/>}/>
-        <Route path='/posts/:id' element={<GetPostsById/>}/>
       </Routes>
 
     </>
