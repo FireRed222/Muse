@@ -17,7 +17,7 @@ const GetPosts = () => {
   const { fetchData } = useStore();
   const { isLoading, error, data } = useQuery({
     queryKey: ["posts"],
-    queryFn: () => fetchData("https://muse-backend-hsdb.onrender.com"),
+    queryFn: () => fetchData("https://muse-backend-hsdb.onrender.com/posts"),
     staleTime: 60 * 1000,
   });
 
