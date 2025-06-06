@@ -1,0 +1,102 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Who Really Cares",
+      "author": "TV Girl",
+      "src": "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/TV_Girl_-_Who_Really_Cares.png/220px-TV_Girl_-_Who_Really_Cares.png",
+      "audio": "/audio/TV Girl - Song About Me.mp3",
+      "songTitle": "Song About Me",
+      "bgColor": ["#2e1a47", "#4b3b47"]
+    },
+    {
+      "id": 2,
+      "title": "IGOR",
+      "author": "Tyler, The Creator",
+      "src": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Igor_-_Tyler%2C_the_Creator.jpg/250px-Igor_-_Tyler%2C_the_Creator.jpg",
+      "audio": "/audio/Tyler, The Creator - Puppet.mp3",
+      "songTitle": "PUPPET",
+      "bgColor": ["#264653", "#3e2f5b"]
+    },
+    {
+      "id": 3,
+      "title": "Whole Lotta Red",
+      "author": "Playboi Carti",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/b/b9/Whole_Lotta_Red.png/274px-Whole_Lotta_Red.png",
+      "audio": "/audio/Playboi Carti - MEH.mp3",
+      "songTitle": "MEH",
+      "bgColor":   ["#3a0f44", "#2c0735"]
+    },
+    {
+      "id": 4,
+      "title": "Currents",
+      "author": "Tame Impala",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/b/ba/Currents_artwork_%28Tame_Impala_album%29.jpg/330px-Currents_artwork_%28Tame_Impala_album%29.jpg",
+      "audio": "/audio/Tame Impala - Eventually.mp3",
+      "songTitle": "Eventually",
+      "bgColor": ["#1b263b", "#4b306a"]
+    },
+    {
+      "id": 5,
+      "title": "The Blue Album",
+      "author": "Weezer",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/b/be/Weezer_Blue_Album.jpg/274px-Weezer_Blue_Album.jpg",
+      "audio": "/audio/Weezer - Buddy Holly.mp3",
+      "songTitle": "Buddy Holly",
+      "bgColor": ["#354f52", "#203a43"]
+    },
+    {
+      "id": 6,
+      "title": "Pinkerton",
+      "author": "Weezer",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/0/09/WeezerPinkerton.jpg/330px-WeezerPinkerton.jpg",
+      "audio": "/audio/Weezer - The Good Life.mp3",
+      "songTitle": "The Good Life",
+      "bgColor": ["#2c2a4a", "#3d2c3e"]
+    },
+    {
+      "id": 7,
+      "title": "Call Me If You Get Lost",
+      "author": "Tyler, The Creator",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/6/66/Call_Me_If_You_Get_Lost.jpg/274px-Call_Me_If_You_Get_Lost.jpg",
+      "audio": "/audio/Tyler, The Creator - DOGTOOTH.mp3",
+      "songTitle": "DOGTOOTH",
+      "bgColor": ["#3e2f5b", "#2e1a47"]
+    },
+    {
+      "id": 8,
+      "title": "AM",
+      "author": "Arctic Monkeys",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/2/2a/Arctic_Monkeys_AM_cover.jpg/330px-Arctic_Monkeys_AM_cover.jpg",
+      "audio": "/audio/Arctic Monkeys - Why'd You Only Call Me When You're High_.mp3",
+      "songTitle": "Why'd You Only Call Me When You're High?",
+      "bgColor": ["#3c4048", "#1a1a2e"]
+    },
+    {
+      "id": 9,
+      "title": "Favourite Worst Nightmare",
+      "author": "Arctic Monkeys",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/2/22/Favourite_Worst_Nightmare.JPG/330px-Favourite_Worst_Nightmare.JPG",
+      "audio": "/audio/Arctic Monkeys - 505.mp3",
+      "songTitle": "505",
+      "bgColor": ["#3d2c3e", "#2c5364"]
+    },
+    {
+      "id": 10,
+      "title": "The Bends",
+      "author": "Radiohead",
+      "src": "https://upload.wikimedia.org/wikipedia/ru/thumb/6/6c/Radiohead.bends.jpg/330px-Radiohead.bends.jpg",
+      "audio": "/audio/Radiohead - High & Dry.mp3",
+      "songTitle": "High And Dry",
+      "bgColor": ["#354f52", "#2e2e3a"]
+    }
+  ],
+  "home": [{ "id": 1, "ttl": "AA", "views": 0 }],
+  "comments": [
+    { "id": 1, "text": "a comment about post 1", "postId": 1 },
+    { "id": 2, "text": "another comment about post 1", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
